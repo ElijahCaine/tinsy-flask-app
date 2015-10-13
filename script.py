@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-dogs = ['Doberman', 'Golden Retrieve', 'Snoop', 'Beagle', 'Bull Terrier',\
+dogs = ['Doberman', 'Golden Retriever', 'Snoop', 'Beagle', 'Bull Terrier',\
         'Akita', 'Siberian Husky', 'Pit Bull', 'Pug', 'Black Lab']
 
 @app.route('/')
