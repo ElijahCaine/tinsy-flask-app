@@ -23,7 +23,7 @@ def render_username(username):
     """
     Returns a specified page at the url /user/<username>
     """
-    url_for('static', filename='hal.png')
+    url_for('static', filename='hal.jpg')
     return render_template('user.html', username=username)
 
 
