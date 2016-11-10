@@ -6,10 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    now = datetime.now()
+    now = datetime.now().strftime("%Y-%m-%d, %H:%M:%S")
     resp = ("<h1>You did it!</h1>"+
-           "<img src='/img'/>"+
-           "<p>Today's date is: "+now.strftime("%Y-%m-%d, %H:%M:%S"))
+           "<img src='/img'></img>"+
+           "<p>Today's date is: " + now + "</p>"+
+           "<p>Here's a hash: " + str(hash(now)) + "</p>")
     return resp
 
 @app.route('/img')
